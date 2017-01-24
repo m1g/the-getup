@@ -2,7 +2,6 @@ const path = require('path')
 const webpack = require('webpack')
 const merge = require('webpack-merge')
 const validate = require('webpack-validator')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
 const ROOT_PATH = path.resolve(__dirname)
@@ -20,11 +19,6 @@ const common = {
     publicPath: '/'
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: path.resolve(SRC_PATH, 'index.html'),
-      inject: 'body',
-      filename: 'index.html'
-    }),
     new webpack.DefinePlugin({
       'process.env': {
         'NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
@@ -67,7 +61,8 @@ const development = {
   devServer: {
     historyApiFallback: true,
     hot: true,
-    stats: { colors: true, chunks: false }
+    stats: { colors: true, chunks: false },
+    contentBase: './public'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin({ multiStep: true }),
