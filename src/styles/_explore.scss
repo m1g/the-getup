@@ -3,15 +3,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $base-color;
-  padding: 2em;
+  background-image: url('../images/header.png');
+  background-size: cover;
+  padding: 2em 0;
   width: 100%;
 
   input {
+    font-family: $base-font-family;
+    font-size: 0.85em;
     padding: 10px;
     text-align: center;
     min-width: 300px;
     border-radius: 10px;
+    border-color: lightgrey;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   img {
@@ -21,6 +29,8 @@
 }
 
 .explore-divider {
+  border-bottom: 1px solid lightgrey;
+  color: #777;
   width: 100%;
 
   div {
@@ -92,6 +102,16 @@
   nav {
     width: 100%;
     background-color: $base-color;
+    border-top: 1px solid lightgrey;
+
+    a:link,
+    a:visited {
+      color: #11402d;
+    }
+
+    a:active {
+      color: white;
+    }
   }
 
   ul {
@@ -99,7 +119,7 @@
     flex-direction: row;
     list-style: none;
     justify-content: space-between;
-    margin: 0 10px;
+    margin: 0 20px;
     padding: 10px 0;
     color: white;
   }
