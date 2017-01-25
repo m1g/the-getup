@@ -3,7 +3,7 @@
 // Subtle Pattern CREDIT: Ignasi Àvila Padró. http://www.cargocollective.com/ignaudible
 
 $base-text-size: 16px;
-$base-font-family: sans-serif;
+$base-font-family: 'helvetica', sans-serif;
 $base-color: #15bb67;
 
 html {
@@ -23,30 +23,7 @@ body {
   align-items: center;
 }
 
-// INDEX FILE
-
-h1 {
-  margin: 1.5em 0;
-  color: white;
-}
-
-// SIGN-UP FILE
-
-.sign-up {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 2em;
-
-  p {
-    margin: 0 1em;
-  }
-
-  button {
-    margin: 0 1em;
-  }
-}
-
 @import 'login';
 @import 'explore';
+@import 'signup';
+@import 'forgotpass'

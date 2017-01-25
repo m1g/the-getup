@@ -4,26 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
   <title>The Getup</title>
+  <link rel='stylesheet' href='https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css' />
 </head>
 <body>
-  <header class='login-header'>
-    <img src='images/logo.png' alt='main logo'>
-  </header>
-  <section class='login-section'>
-    <p><a href='signup.html'>Don't have an account? Sign up</a></p>
-    <form action="submit">
-      <input type='email' placeholder='Email Address'/>
-      <input type='email' placeholder='********'/>
-      <button type='submit' name='sign-in'><a href='explore.html'>Sign In</a></button>
-    </form>
-  </section>
-  <footer class='login-footer'>
-    <p><a href='#'>Forgot your password?</a></p>
-    <div>
-      <a href="./loggedIn.html"><button type='submit' name='twitter'>Log in</button></a>
-      <button type='submit' name='facebook'>Log in</button>
-    </div>
-  </footer>
+  <video autoplay loop muted poster='' class='video-bg'>
+    <source src='media/swim-vid.mp4' type='video/mp4'>
+  </video>
+  <main>
+    <header class='login-header'>
+      <img src='images/logo.png' alt='main logo'>
+    </header>
+    <section class='login-section'>
+      <p><a href='signup.html'>Don't have an account? Sign up</a></p>
+      <form action="submit">
+        <input type='email' placeholder='Email Address'/>
+        <input type='email' placeholder='********'/>
+        <button type='submit' name='sign-in'><a href='explore.html'>Sign In</a></button>
+      </form>
+    </section>
+    <footer class='login-footer'>
+      <p><a href='forgotpass.html'>Forgot your password?</a></p>
+      <div class='login-social'>
+        <button type='submit' name='twitter' class='twitter'><i class='fa fa-twitter fa-2x' aria-hidden='true'></i><a href="explore.html">Log in</a></button></a>
+        <button type='submit' name='facebook' class='facebook'><i class='fa fa-facebook fa-2x' aria-hidden='true'></i><a href='explore.html'>Log in</a></button>
+      </div>
+    </footer>
+  </main>
   <script src="bundle.js" charset="utf-8"></script>
 </body>
 </html>

@@ -1,0 +1,73 @@
+
+.forgotpass-header {
+  display: flex;
+  justify-content: center;
+  font-family: $base-font-family;
+  padding: 10px 0;
+  width: 100%;
+  background-color: $base-color;
+  color: white;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.forgotpass-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  form {
+    width: 100%;
+  }
+
+  input {
+    display: block;
+    background-color: white;
+    font-family: $base-font-family;
+    font-size: 0.85em;
+    padding: 10px;
+    width: 65%;
+    margin: 10px 0;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.forgotpass-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1em 0;
+
+  a:link,
+  a:visited {
+    color: red;
+    text-decoration: none;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  button {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: $base-color;
+    border: none;
+    border-radius: 10px;
+
+    a:link,
+    a:visited {
+      font-weight: bolder;
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
