@@ -1,5 +1,5 @@
 
-.flights-header {
+.hotels-header {
   display: flex;
   justify-content: center;
   font-family: $base-font-family;
@@ -13,7 +13,7 @@
   }
 }
 
-.flights-section {
+.hotels-section {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@
     }
   }
 
-  .flights-skip {
+  .hotels-skip {
     display: flex;
     align-items: center;
     width: 100%;
@@ -59,7 +59,7 @@
     }
 
     button {
-      width: 50%;
+      width: 100%;
       border: 1px solid lightgrey;
       background-color: white;
       padding: 5px 0;
@@ -98,7 +98,7 @@
   }
 }
 
-.flights-dates {
+.hotels-dates {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -109,7 +109,7 @@
   }
 }
 
-.flights-flights {
+.hotels-hotels {
   width: 100%;
   background-color: white;
   text-align: center;
@@ -145,7 +145,7 @@
   }
 }
 
-.flights-submit {
+.hotels-submit {
   display: flex;
   flex-direction: column;
   padding-bottom: 50px;
@@ -157,7 +157,7 @@
   }
 }
 
-.flights-footer {
+.hotels-footer {
   position: fixed;
   left: 0;
   bottom: 0;

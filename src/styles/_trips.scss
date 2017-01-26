@@ -1,5 +1,5 @@
 
-.flights-header {
+.trips-header {
   display: flex;
   justify-content: center;
   font-family: $base-font-family;
@@ -13,7 +13,7 @@
   }
 }
 
-.flights-section {
+.trips-section {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -48,14 +48,18 @@
     }
   }
 
-  .flights-skip {
+  .trips-skip {
     display: flex;
     align-items: center;
     width: 100%;
 
     .my-trip {
       background-color: $base-color;
-      color: white;
+
+      a:link,
+      a:visited {
+        color: white;
+      }
     }
 
     button {
@@ -98,7 +102,7 @@
   }
 }
 
-.flights-dates {
+.trips-dates {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -109,7 +113,7 @@
   }
 }
 
-.flights-flights {
+.trips-trips {
   width: 100%;
   background-color: white;
   text-align: center;
@@ -145,7 +149,7 @@
   }
 }
 
-.flights-submit {
+.trips-submit {
   display: flex;
   flex-direction: column;
   padding-bottom: 50px;
@@ -157,7 +161,7 @@
   }
 }
 
-.flights-footer {
+.trips-footer {
   position: fixed;
   left: 0;
   bottom: 0;
