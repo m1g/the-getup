@@ -158,6 +158,10 @@
     padding: 10px;
     background-color: $base-color;
     color: white;
+
+    &:focus {
+      outline: none;
+    }
   }
 }
 

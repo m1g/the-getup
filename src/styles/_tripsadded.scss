@@ -1,0 +1,107 @@
+
+.added-header {
+  display: flex;
+  justify-content: center;
+  font-family: $base-font-family;
+  padding: 10px 0;
+  width: 100%;
+  background-color: $base-color;
+  color: white;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.added-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+
+  .added-trip {
+    table {
+      padding: 10px;
+      width: 100vw;
+      background-color: white;
+      border-bottom: 1px solid $base-color;
+      color: green;
+    }
+  }
+
+  .added-skip {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .my-trip {
+      background-color: $base-color;
+
+      a:link,
+      a:visited {
+        color: white;
+      }
+    }
+
+    button {
+      width: 50%;
+      border: 1px solid lightgrey;
+      background-color: white;
+      padding: 5px 0;
+
+      a:link,
+      a:visited {
+        color: #777;
+        text-decoration: none;
+      }
+
+      a:focus,
+      a:hover {
+        outline: none;
+      }
+    }
+  }
+
+  p {
+    color: #777;
+  }
+}
+
+.added-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: $base-color;
+  border-top: 1px solid lightgrey;
+
+  nav {
+    margin: 0 20px;
+
+    a:link,
+    a:visited {
+      color: #11402d;
+    }
+
+    a:active {
+      color: white;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 1em;
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+    color: white;
+
+    li {
+      margin: 0;
+    }
+  }
+}
