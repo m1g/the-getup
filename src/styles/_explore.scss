@@ -111,7 +111,8 @@
 
     a:focus,
     a:hover,
-    a:active {
+    a:active,
+    a.active {
       color: white;
     }
   }
